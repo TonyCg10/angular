@@ -1,0 +1,5 @@
+.div_dog_img_for {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -1,0 +1,51 @@
+<div class="cart-dog" *ngFor="let pup of dog">
+
+  <p>{{pup.name}}</p>
+
+</div>
+
+<div class="div_dog_adopt">
+
+  <form #adoptForm="ngForm" [formGroup]="checkoutForm" (ngSubmit)="submit()" novalidate>
+
+    <label for="name"> Name: </label>
+    <input id="name" type="text" name="name" placeholder="pepe" formControlName="name" ngModel="">
+
+    <div class="errors" [@showError]="showHidden ? 'show' : 'hidden' "
+      *ngIf="checkoutForm.controls['name'].invalid && (checkoutForm.controls['name'].dirty || checkoutForm.controls['name'].touched)">
+      Name is required
+    </div>
+    <br>
+
+    <label for="lastName"> Last Name: </label>
+    <input id="lastName" type="text" name="lastName" placeholder="hernandez" formControlName="lastName" ngModel="">
+
+    <div class="errors"
+      *ngIf="checkoutForm.controls['lastName'].invalid && (checkoutForm.controls['lastName'].dirty || checkoutForm.controls['lastName'].touched)">
+      Last Name is required
+    </div>
+    <br>
+
+    <label for="address"> Address: </label>
+    <input id="address" type="text" name="address" placeholder="address" formControlName="address" ngModel="">
+
+    <div class="errors"
+      *ngIf="checkoutForm.controls['address'].invalid && (checkoutForm.controls['address'].dirty || checkoutForm.controls['address'].touched)">
+      Address required
+    </div>
+    <br>
+
+    <label for="email"> Email: </label>
+    <input id="email" type="email" name="email" placeholder="pepe@gmail.com" formControlName="email" ngModel="">
+
+    <div class="errors"
+      *ngIf="checkoutForm.controls['email'].invalid && (checkoutForm.controls['email'].dirty || checkoutForm.controls['email'].touched)">
+      Email is required
+    </div>
+    <br>
+
+    <button class="btn" [disabled]="checkoutForm.pristine || checkoutForm.invalid" type="submit">Submit</button>
+
+  </form>
+
+</div>

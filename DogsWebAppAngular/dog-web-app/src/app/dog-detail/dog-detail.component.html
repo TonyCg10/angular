@@ -1,0 +1,24 @@
+<h2>Dog Details</h2>
+
+<section>
+
+  <div class="div_dog_detail_container" *ngIf="dog">
+
+    <div class="details">
+
+      <p class="dog_name"> <strong>Name: </strong> <br><br> <i>{{ dog.name }}</i> </p>
+      <hr>
+      <p class="dog_age"> <strong>Age: </strong> <br><br> <i>{{ dog.age }}</i> </p>
+      <hr>
+      <p class="dog_race"> <strong>Race: </strong> <br><br> <i>{{ dog.race }}</i></p>
+      <hr>
+      <p class="dog_description"> <strong>Description: </strong> <br><br> <i>{{ dog.description }}</i></p>
+      <hr>
+
+    </div>
+
+    <button class="btn1" type="button" (click)="adoptDog()">Adopt</button>
+
+  </div>
+
+</section>

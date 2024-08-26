@@ -1,0 +1,20 @@
+<br><br><br><br><br><br>
+
+<div class="search_container">
+
+  <input type="text" class="search" #criteria (input)="updateCriteria(criteria.value)" placeholder="Search dogs races">
+
+  <a>
+
+    <ul class="dogs" [@filterAnimation]="dogsTotal">
+      <li *ngFor="let dog of dogs" class="dog">
+        <div class="inner">
+          <p class="name">{{ dog.race }}</p>
+          <img [src]="dog.raceImg" alt="">
+        </div>
+      </li>
+    </ul>
+
+  </a>
+
+</div>

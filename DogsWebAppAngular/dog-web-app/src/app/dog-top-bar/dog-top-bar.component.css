@@ -1,0 +1,161 @@
+.section_dog_top_bar {
+  background-color: rgb(255, 214, 164);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.a_dog_top_home {
+  font-size: 60px;
+}
+
+.a_Home {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 5px silver;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.a_Race {
+  text-decoration: none;
+  color: silver;
+  text-shadow: 0 0 5px white;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.a_Home:hover {
+  text-shadow: 0 0 10px white;
+  color: silver;
+}
+
+.a_Race:hover {
+  text-shadow: 0 0 10px silver;
+  color: white;
+}
+
+.button_dog_top_bar {
+  background-color: white;
+  border-style: none;
+  color: silver;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 1%;
+  border-radius: 15px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.button_dog_top_bar:hover {
+  box-shadow: 0 0 6px black;
+  cursor: pointer;
+}
+
+.button_dog_top_bar:active {
+  box-shadow: 0 0 10px black;
+}
+
+.input_dog_top_bar {
+  background-color: white;
+  text-align: center;
+  border: hidden;
+  color: rgb(59, 59, 59);
+  border-radius: 25px;
+  margin: 1%;
+  font-size: 25px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.input_dog_top_bar:focus {
+  box-shadow: inset 0 0 6px silver;
+}
+
+.search_container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  top: 3%;
+  left: 20%;
+  border-radius: 25px;
+}
+
+.a_result {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(59, 59, 59);
+  text-shadow: 0 0 2px silver;
+  box-shadow: inset 0 0 6px silver;
+  margin-top: 2%;
+  font-size: 30px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay a {
+  padding: 4px 4px 4px 32px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #818181;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: silver;
+}
+
+.content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a:hover {
+  color: silver;
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 100px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 18px 15px;
+  border: none;
+  border-radius: 15px;
+  transition-duration: 0.3s;
+}
+
+.openbtn:hover {
+  background-color: silver;
+  box-shadow: 0 0 10px black;
+}
+
+#main {
+  padding: 20px;
+}

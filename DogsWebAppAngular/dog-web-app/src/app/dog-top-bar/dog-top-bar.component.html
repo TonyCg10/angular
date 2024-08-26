@@ -1,0 +1,44 @@
+<section class="section_dog_top_bar">
+
+  <!-- Side bar -->
+  <div id="mySidebar" class="overlay">
+
+    <a class="closebtn" (click)="closeNav()">&times;</a>
+
+    <ul class="content">
+      <li>
+        <a>About</a>
+        <a>Services</a>
+        <a>Clients</a>
+        <a>Contact</a>
+      </li>
+    </ul>
+
+  </div>
+
+  <div id="main">
+    <button class="openbtn" (click)="openNav()">&#9776; Open Sidebar</button>
+  </div>
+
+  <!-- Links -->
+  <div class="a_dog_top_home">
+    <a class="a_Home" routerLink='/dog-home'>Dog Web</a>
+    .
+    <a class="a_Race" routerLink="./dog-aside">Race</a>
+  </div>
+
+  <!-- List button -->
+  <button class="button_dog_top_bar" type="button" routerLink="/dog-adopt">Lista</button>
+
+  <!-- Search bar -->
+  <div class="search_container">
+
+    <input #searchBox class="input_dog_top_bar" (input)="search(searchBox.value)" placeholder="search" />
+
+    <a [@searchBar]='bln' class="a_result" [routerLink]="['dog-detail', dog.name]" *ngFor="let dog of dogs$ | async">
+      {{dog.name}}
+    </a>
+
+  </div>
+
+</section>

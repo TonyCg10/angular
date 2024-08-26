@@ -1,0 +1,87 @@
+.div_dog_adopt {
+  background-color: white;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 10%;
+  box-shadow: 0 0 20px silver;
+  border-radius: 25px;
+}
+
+.cart-dog {
+  display: flex;
+  justify-content: space-around;
+  background-color: whitesmoke;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 3%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-transform: lowercase;
+  color: rgb(224, 223, 223);
+  text-align: center;
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(199, 199, 199);
+}
+
+label {
+  text-align: center;
+  margin-top: 3%;
+}
+
+input:hover {
+  position: relative;
+  bottom: 1px;
+}
+
+input:focus {
+  background-color: rgb(245, 245, 245);
+}
+
+button {
+  margin-top: 2%;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 4%;
+}
+
+.cart-dog {
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: -8%;
+}
+
+.errors {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  color: red;
+  background-color: rgb(255, 208, 208);
+}
+
+.btn {
+  border-style: none;
+  background: none;
+  color: black;
+  border-radius: 10px;
+  font-size: 25px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.btn:disabled {
+  color: gainsboro;
+}
+
+.btn:enabled {
+  color: rgb(0, 0, 0);
+  background-color: rgb(211, 211, 211);
+}

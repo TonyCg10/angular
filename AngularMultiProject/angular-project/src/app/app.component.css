@@ -1,0 +1,38 @@
+header{
+  width: 100%;
+  height: 50px;
+  background-color: antiquewhite;
+  border-radius: 5%;
+}
+
+h1{
+  text-align: center;
+}
+
+.currencies{
+  padding: 1%;
+  margin: 1%;
+  text-align: center;
+  display: inline-block;
+}
+
+.li_currencies{
+  list-style: none;
+  background-color: antiquewhite;
+}
+
+.a_currencies{
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.a_currencies:hover{
+  top: 50px;
+  color: rgb(182, 193, 202);
+}
+
+.a_currencies:active{
+  bottom: 30px;
+}

@@ -1,0 +1,12 @@
+<div *ngIf="dog.img.length > 0" class="div_dog_img" [title]="dog.name + ' details'">
+
+  <button class="btn2_dog_img" type="button" (click)="next()">next</button>
+
+  <h2 class="h2_dog_img" [routerLink]="['/dog-detail', dog.name]">{{dog.name}}</h2>
+
+  <img class="img_dog_img" id="img_dog_img" [src]="dog.img[num]" alt="There's no other pic :("
+    [routerLink]="['/dog-detail', dog.name]">
+
+  <button class="btn1_dog_img" type="button" (click)="prev()">prev</button>
+
+</div>

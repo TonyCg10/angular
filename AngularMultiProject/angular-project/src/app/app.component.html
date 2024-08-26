@@ -1,0 +1,31 @@
+<header>
+  <h1>Project</h1>
+</header>
+<article>
+  <section>
+
+    <div *ngFor="let currency of currencies" class="currencies">
+      <ul class="ul_currencies">
+        <li class="li_currencies">
+          <a href="" class="a_currencies">
+            <h4 [title]="currency.type + ' details'">
+              {{currency.type | uppercase}}
+            </h4>
+            <div *ngIf="currency.id">
+              <h5>
+                {{currency.value}}
+              </h5>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+</article>
+<aside>
+
+</aside>
+<footer>
+
+</footer>
